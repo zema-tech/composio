@@ -48,7 +48,7 @@
         "@ai-sdk/react": "^4.0.96",
         "@anthropic-ai/claude-agent-sdk": "^0.3.263",
         "@anthropic-ai/sdk": "^0.115.0",
-        "@composio/anthropic": "^0.11.6",
+        "@composio/anthropic": "^0.11.7",
         "@composio/claude-agent-sdk": "^0.13.0",
         "@composio/core": "^0.28.0",
         "@composio/google": "^0.12.0",
@@ -219,7 +219,7 @@
 
     "@chevrotain/types": ["@chevrotain/types@11.1.2", "", {}, "sha512-U+HFai5+zmJCkK86QsaJtoITlboZHBqrVketcO2ROv865xfCMSFpELQoz1GkX5GzME8pTa+3kbKrZHQtI0gdbw=="],
 
-    "@composio/anthropic": ["@composio/anthropic@0.11.6", "", { "peerDependencies": { "@anthropic-ai/sdk": "^0.110.0 || ^0.120.0 || ^0.124.0 || ^0.125.0 || ^0.127.0 || ^0.132.0 || ^0.133.0", "@composio/core": ">=0.10.0 <1.0.0 || >=1.0.0-beta.0 <1.0.0" } }, "sha512-3DIycP1DbLWm7tiLECo9qARxjkKefj3d85dZVsWrQhTcY0cGT8mxoTJlu7nn2iyFV2PprYFiUZ8zDSZqQPpWwA=="],
+    "@composio/anthropic": ["@composio/anthropic@0.11.7", "", { "peerDependencies": { "@anthropic-ai/sdk": "^0.110.0 || ^0.120.0 || ^0.124.0 || ^0.125.0 || ^0.127.0 || ^0.132.0 || ^0.133.0 || ^0.135.0", "@composio/core": ">=0.10.0 <1.0.0 || >=1.0.0-beta.0 <1.0.0" } }, "sha512-aXSSrMY+9R+PtX/efq2Hjsq6Xdl/N5TmVrZhKckgaGaNJWp0XZL7GpcNgaCTR8vNJpekgwc3j3ST1+RlpMsKAA=="],
 
     "@composio/claude-agent-sdk": ["@composio/claude-agent-sdk@0.13.0", "", { "dependencies": { "@composio/json-schema-to-zod": "0.4.0", "zod": "^4.5.4" }, "peerDependencies": { "@anthropic-ai/claude-agent-sdk": "^0.3.199", "@composio/core": ">=0.10.0 <1.0.0 || >=1.0.0-beta.0 <1.0.0" } }, "sha512-HYEkahUuRlj7WL1m0WJQO9SVuhdTcu/Zg3DA/B5XijRDgY5luFST/otocg4VQ21xLcuo9fMvTYXVN3jQUugv6Q=="],
 

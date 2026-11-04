@@ -124,6 +124,10 @@ const getUserProfile = experimental_createTool("GET_USER_PROFILE", {
 
 Pass custom tools via the `experimental` option. `session.tools()` returns both remote Composio tools and your custom tools.
 
+<Callout type="info">
+In TypeScript, the options are `localTools` and `localToolkits`, and the session methods are `session.localTools()` and `session.localToolkits()`. The older `customTools` / `customToolkits` names still work as deprecated aliases. Passing both names for the same option throws a `ValidationError`.
+</Callout>
+
 {/* code-example: no-api reason="binding custom tools needs the SDK to serialize their schemas and run their handlers locally" */}
 <Tabs groupId="language" items={['Python', 'TypeScript']} persist>
 <Tab value="Python">
@@ -153,7 +157,7 @@ const composio = new Composio({ apiKey: "your_api_key" });
 
 const session = await composio.create("user_1", {
   experimental: {
-    customTools: [getUserProfile],
+    localTools: [getUserProfile],
   },
 });
 
@@ -325,7 +329,7 @@ const composio = new Composio({ apiKey: "your_api_key" });
 const session = await composio.create("user_1", {
   toolkits: ["gmail"],
   experimental: {
-    customTools: [sendPromoEmail],
+    localTools: [sendPromoEmail],
   },
 });
 
@@ -473,7 +477,7 @@ const composio = new Composio({ apiKey: "your_api_key" });
 
 const session = await composio.create("user_1", {
   experimental: {
-    customToolkits: [userManagement],
+    localToolkits: [userManagement],
   },
 });
 
@@ -556,7 +560,7 @@ const replyGuide = experimental_createTool("GET_REPLY_STYLE_GUIDE", {
 
 const session = await composio.create("user_1", {
   experimental: {
-    customTools: [replyGuide],
+    localTools: [replyGuide],
   },
 });
 
@@ -629,8 +633,8 @@ import { Composio } from "@composio/core";
 const composio = new Composio({ apiKey: "your_api_key" });
 const session = await composio.create("user_1");
 // ---cut---
-const customTools = session.customTools();
-const customToolkits = session.customToolkits();
+const localTools = session.localTools();
+const localToolkits = session.localToolkits();
 ```
 </Tab>
 </Tabs>
@@ -663,7 +667,7 @@ const composio = new Composio({ apiKey: "your_api_key" });
 // ---cut---
 
 const session = await composio.use("session_id", {
-  customTools: [getUserProfile],
+  localTools: [getUserProfile],
 });
 ```
 </Tab>
