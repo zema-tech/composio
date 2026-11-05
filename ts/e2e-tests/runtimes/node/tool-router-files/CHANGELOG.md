@@ -1,5 +1,12 @@
 # @e2e-tests/node-tool-router-files
 
+## 0.0.13
+
+### Patch Changes
+
+- Updated dependencies [b53b07a]
+  - @composio/core@0.29.0
+
 ## 0.0.12
 
 ### Patch Changes

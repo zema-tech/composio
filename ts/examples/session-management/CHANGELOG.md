@@ -1,5 +1,12 @@
 # session-management-example
 
+## 0.1.13
+
+### Patch Changes
+
+- Updated dependencies [b53b07a]
+  - @composio/core@0.29.0
+
 ## 0.1.12
 
 ### Patch Changes
