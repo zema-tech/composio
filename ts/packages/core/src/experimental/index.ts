@@ -31,3 +31,6 @@ export type {
   CustomToolkit,
   CreateCustomToolkitParams,
 } from '../types/customTool.types';
+
+// Agent kit: delegate sub-tasks to another LLM with your own key, and share a memory between agents.
+export * from './agent-kit';
