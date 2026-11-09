@@ -8,3 +8,4 @@
  * @module experimental
  */
 export * from './pi/index';
+export * from './memory-file-storage';
