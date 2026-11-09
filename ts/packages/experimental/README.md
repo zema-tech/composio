@@ -13,6 +13,7 @@ npm install @composio/core @composio/experimental
 - `PiProvider` (root export): adapts Composio tools for [`@earendil-works/pi-coding-agent`](https://www.npmjs.com/package/@earendil-works/pi-coding-agent), including dynamic session helpers that let Pi search, connect, and execute tools at runtime. See the [Pi provider docs](https://docs.composio.dev/docs/providers/pi) for the full guide.
 - `EveProvider` (from `@composio/experimental/eve`): adapts Composio tools for the [eve](https://github.com/vercel/eve) agent framework, with hook-based interception and per-tool approval helpers.
 - `experimental_createLocalWorkbenchSession` (from `@composio/experimental/workbench`): run a session's sandbox on your local machine instead of the hosted workbench.
+- `createFileMemoryStorage` (root export): a file-backed, lock-protected storage for the shared memory in `@composio/core/experimental` (`MemoryStore`), so several agents on one machine can share a memory file.
 
 ## Links
 
